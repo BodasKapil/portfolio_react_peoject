@@ -1,0 +1,18 @@
+pipelines:
+  default:
+    - step:
+        name: Build and Deploy
+        caches:
+          - node
+        script:
+          - npm install
+          - npm run build
+        artifacts:
+          - build/**
+    - step:
+        name: Deploy to Firebase Hosting
+        deployment: production
+        script:
+          - pipe: atlassian/firebase-deploy:1.3.0
+            variables:
+              FIREBASE_TOKEN: $FIREBASE_TOKEN

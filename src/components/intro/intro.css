@@ -1,0 +1,84 @@
+#intro{
+    height:calc(100vh-4rem);
+    width:70vw;
+    max-width: 55rem;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 10px;
+    
+}
+
+.bg{
+    position:fixed;
+    z-index: -1;
+    top:-4rem;
+    right: 0;
+    top: -1;
+    object-fit:cover;
+    height: 70vh;
+    width: 25vw;
+    margin-top: 200px;
+    margin-right: 80px;
+    
+}
+.sub_btn_1{
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 250px;
+}
+.login-student{
+    font-size: 10px;
+}
+.introContent{
+    height: 100vh;
+    
+    padding:2rem;
+    font-size: 2.2rem;
+    font-weight: 200;
+    display:flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 300px;
+    padding-bottom: 500px; 
+}
+.hello{
+    font-size: 3rem;
+    font-weight: 100;
+    
+}
+.introText{
+    font-size: 1.9rem;
+}
+
+.introName{
+    color: yellow;
+    font-size: 1.9rem;
+}
+.introPara{
+
+font-size: medium;
+font-weight: 300;
+letter-spacing: 1px;
+}
+.sub_btn_1{
+    color: black;
+    background-color: white;
+}
+@media screen and (max-width:768px) {
+    .bg{
+        right:-10vw;
+    }
+    .introContent{
+        font-size: 10vw;
+    }
+    .hello{
+        font-size: 4.5vw;
+    }
+}
+
+@media screen and (max-width:480) {
+    .bg{
+        right:-20vw;
+    }
+}

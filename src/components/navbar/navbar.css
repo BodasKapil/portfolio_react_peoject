@@ -1,0 +1,42 @@
+ .navbar{
+   background:rgb(144, 137, 137);
+    height:5rem;
+    max-width: 75rem;
+    width:80vw;
+    margin:0 auto;
+    padding:1rem,2rem;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    position:sticky;
+    top:0;
+    z-index: 3;
+ }
+
+ .desktopMenuListItem{
+    margin: 1.5rem;
+    
+    cursor: pointer;
+ }
+
+ .desktopMenuListItem:hover{
+    color:yellow;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid yellow;    
+ }
+ .desktopMenuBtn{
+background: white;
+color:black;
+border:none;
+display:flex;
+align-items: center;
+justify-content: center;
+padding:  1rem;
+border-radius: 2rem;
+
+ }
+ .active{
+   color:yellow;
+   padding-bottom: 0.5rem;
+   border-bottom: 3px solid;
+ }

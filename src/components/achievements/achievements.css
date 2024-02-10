@@ -1,0 +1,35 @@
+#works{
+    margin: 0 auto;
+    min-height: calc(100vh-2rem);
+    width: 100vw;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+}
+.workstitle{
+    margin: 1rem 0;
+    font-size: 3rem;
+}
+
+.academics-done{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    
+    max-width: 63rem;
+
+}
+.academics-desc{
+    width:30rem;
+    height: 20rem;
+    margin: 0.5rem;
+    margin: 0.2rem;
+    padding: 1.5rem 2rem;
+    border-radius:1.5rem;
+    background: rgb(50, 50, 50);
+}
+
