@@ -3,7 +3,7 @@ pipeline {
 
     
     environment {
-    AZURE_CREDENTIALS = credentials('44dfde23-c266-4540-903e-4b98c9e2b853')
+    AZURE_CREDENTIALS = credentials('29e5f7c2-2cc8-4606-82b4-4572bce0bf8c')
     RESOURCE_GROUP = 'Kapilbodas1'
     WEB_APP_NAME = 'KapilBodas'
 }
