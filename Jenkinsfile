@@ -32,15 +32,28 @@ pipeline {
             }
         }
     }
-
     post {
-        success {
+    success {
+        script {
             // Actions to be taken on success
-            // For example, trigger another job or send notifications
-        }
-        failure {
-            // Actions to be taken on failure
-            // For example, send notifications or cleanup tasks
+            echo 'Deployment successful'
+
+            // Example: Deploy to a server
+            // Add commands or scripts to copy React build artifacts to your server
+
+            // Example: Trigger another Jenkins job for end-to-end testing
+            // build job: 'EndToEndTests', wait: false
         }
     }
+    failure {
+        script {
+            // Actions to be taken on failure
+            echo 'Deployment failed'
+
+            // Example: Send notifications
+            // Use a notification plugin or send an email
+        }
+    }
+}
+
 }
