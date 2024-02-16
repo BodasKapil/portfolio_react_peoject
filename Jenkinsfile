@@ -25,7 +25,6 @@ pipeline {
         stage('Deploy to Azure Web App') {
             steps {
                 script {
-                
                     azureWebAppPublish appName: env.WEB_APP_NAME,
                                         resourceGroup: env.RESOURCE_GROUP,
                                         credentialsId: env.AZURE_CREDENTIALS,
