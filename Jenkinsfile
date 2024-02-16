@@ -1,60 +1,36 @@
 pipeline {
     agent any
 
-    
     environment {
-    AZURE_CREDENTIALS = credentials('')
-    RESOURCE_GROUP = 'Kapilbodas1'
-    WEB_APP_NAME = 'KapilBodas'
-}
-
+        AZURE_CREDENTIALS = credentials('44dfde23-c266-4540-903e-4b98c9e2b853')
+        RESOURCE_GROUP = 'kapilbodas1'
+        WEB_APP_NAME = 'KapilBodas'
+    }
 
     stages {
-        stage('install npm packages') {
+        stage('Install npm') {
             steps {
-                // Checkout your source code repository
-                // For example, for Git:
-               bat 'npm install'
+                
+                bat 'npm install'
             }
         }
 
         stage('Build') {
             steps {
-                // Build your project
-                // For example, for Maven:
+                // Add your build steps here
                 bat 'npm run build'
             }
         }
 
         stage('Deploy to Azure Web App') {
             steps {
-                
-                bat 'Xcopy build C:\\home\\site\\wwwroot /E /H /C /I /Y '
+                script {
+                    azureWebAppPublish appName: env.WEB_APP_NAME,
+                                        resourceGroup: env.RESOURCE_GROUP,
+                                        credentialsId: env.AZURE_CREDENTIALS,
+                                        publishProfile: 'kapilbodas.scm.azurewebsites.net:443'
+                }
             }
         }
     }
-    post {
-    success {
-        script {
-            // Actions to be taken on success
-            echo 'Deployment successful'
-
-            // Example: Deploy to a server
-            // Add commands or scripts to copy React build artifacts to your server
-
-            // Example: Trigger another Jenkins job for end-to-end testing
-            // build job: 'EndToEndTests', wait: false
-        }
-    }
-    failure {
-        script {
-            // Actions to be taken on failure
-            echo 'Deployment failed'
-
-            // Example: Send notifications
-            // Use a notification plugin or send an email
-        }
-    }
-}
-
 }
