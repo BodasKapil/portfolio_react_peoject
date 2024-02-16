@@ -1,12 +1,13 @@
 pipeline {
     agent any
 
+    
     environment {
-        // Define environment variables if needed
-        // For example:
-        // JAVA_HOME = '/path/to/java'
-        // MAVEN_HOME = '/path/to/maven'
-    }
+    AZURE_CREDENTIALS = credentials('44dfde23-c266-4540-903e-4b98c9e2b853')
+    RESOURCE_GROUP = 'Kapilbodas1'
+    WEB_APP_NAME = 'KapilBodas'
+}
+
 
     stages {
         stage('install npm packages') {
