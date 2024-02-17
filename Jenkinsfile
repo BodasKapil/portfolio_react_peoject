@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        // AZURE_CREDENTIALS = credentials('69cb616c-21b7-4baa-b547-1a9d4c885bbe')
+        AZURE_CREDENTIALS = credentials('Uo18Q~UsS3j56WVAVLWM5B2DVs2lb1IxfHBqlcm4')
         RESOURCE_GROUP = 'kapilbodas1'
         WEB_APP_NAME = 'KapilBodas'
     }
@@ -26,8 +26,8 @@ pipeline {
             steps {
                 script {
                     azureWebAppPublish appName: env.WEB_APP_NAME,
-                                        resourceGroup: env.RESOURCE_GROUP
-                                        // credentialsId: env.AZURE_CREDENTIALS
+                                        resourceGroup: env.RESOURCE_GROUP,
+                                        credentialsId: env.AZURE_CREDENTIALS
                 }
             }
         }
