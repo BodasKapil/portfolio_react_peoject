@@ -11,7 +11,6 @@ const Intro = () =>{
                 <span className="introText">pursuing BE in AI & Data Science</span>
                 <br/>
                 <p className="introPara">Enthusiasts in Cloud Computing and Java and python</p>
-                <p className="introPara">Swim and play kabaddi</p>
                 <p className="introPara">A Melomaniac Person. Intrested in learning Indian Classical Music.</p>
             </div>
 
