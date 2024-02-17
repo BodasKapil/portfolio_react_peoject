@@ -27,8 +27,7 @@ pipeline {
                 script {
                     azureWebAppPublish appName: env.WEB_APP_NAME,
                                         resourceGroup: env.RESOURCE_GROUP,
-                                        credentialsId: env.AZURE_CREDENTIALS,
-                                        publishProfile: 'kapilbodas.scm.azurewebsites.net:443'
+                                        credentialsId: env.AZURE_CREDENTIALS
                 }
             }
         }
