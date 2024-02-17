@@ -32,11 +32,11 @@ const Contact= () => {
                 <input type="text" className="email" name = "to_email" placeholder="Your Email Address"/>
                 <textarea className="msg" name="message"cols="" rows="5" placeholder="Your Message"></textarea>
                 <button typr="submit" value='Send' className="submitBtn">Submit</button>
-                <div className="links">
-                    <img src={img_fb} className="link"/>
-                    <img src={img_insta} className="link"/>
-                    <img src={img_github} className="link"/>
-                    <img src={img_linked} className="link"/>
+                <div className="links" >
+                    <img src={img_fb} alt="Not found" className="link"/>
+                    <img src={img_insta} alt="Not found" className="link"/>
+                    <img src={img_github} alt="Not found" className="link"/>
+                    <img src={img_linked} alt="Not found" className="link"/>
                 </div>
             </form>
         </div>

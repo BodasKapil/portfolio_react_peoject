@@ -1,6 +1,6 @@
 import React from "react";
 import './intro.css';
-import myself from '../intro/myself.jpeg'
+
 
 const Intro = () =>{
     return(
@@ -13,7 +13,7 @@ const Intro = () =>{
                 <p className="introPara">Enthusiasts in Cloud Computing and Java.</p>
                 <p className="introPara">A Melomaniac Person. Intrested in learning Indian Classical Music.</p>
             </div>
-            {/* <img src={myself} className="bg"/> */}
+
         </section>
     )
 }
