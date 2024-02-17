@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        AZURE_CREDENTIALS = credentials('242bf57f-2fc5-4b1f-bf47-a6899e658863')
+        AZURE_CREDENTIALS = credentials('69cb616c-21b7-4baa-b547-1a9d4c885bbe')
         RESOURCE_GROUP = 'kapilbodas1'
         WEB_APP_NAME = 'KapilBodas'
     }
