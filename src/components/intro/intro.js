@@ -7,7 +7,7 @@ const Intro = () =>{
         <section id="intro">
             <div className="introContent">
                 <span className="hello">Hello,</span>
-                <span className="introText">I'm <span className="introName">Kapil Bodas</span><br/>Undergrad Student of VESIT Chembur</span>
+                <span className="introText">I'm <span className="introName">Kapil S. Bodas</span><br/>Undergrad Student of VESIT Chembur</span>
                 <span className="introText">pursuing BE in Artificial Intelligence & Data Science</span>
                 <br/>
                 <p className="introPara">Enthusiasts in Cloud Computing and Java and python</p>
