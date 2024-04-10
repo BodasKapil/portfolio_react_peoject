@@ -12,7 +12,7 @@ const Intro = () =>{
                 <br/>
                 <p className="introPara">Enthusiasts in Cloud Computing, Java and python and Mahcine Learning </p>
                 
-                <p className="introPara">A Melomaniac Person. Intrested in learning Indian Classical Music.</p>
+                <p className="introPara">A Melomaniac Person. Intrested in learning Indian Classical Music and flute.</p>
             </div>
 
         </section>
